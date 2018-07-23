@@ -12,6 +12,10 @@
         <title>JSP Page</title>
     </head>
     <body>
-        <h1>Hello World!</h1>
+        <form name="frm" id="frm" action="login.htm?action=authenicate" method="post">
+            <input type="text" name="loginid" id="loginid" maxlength="10" value="${loginid}">
+            <input type="password" name="password" id="password" maxlength="10" value="${pwd}">
+            <input type="submit" value="submit">
+        </form>
     </body>
 </html>

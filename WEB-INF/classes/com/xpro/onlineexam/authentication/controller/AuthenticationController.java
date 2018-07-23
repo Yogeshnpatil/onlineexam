@@ -23,6 +23,12 @@ public class AuthenticationController
     @RequestMapping(method = RequestMethod.GET)
     public String showLoginPage()
     {
+        logger.info("Hello");
         return "login";
+    }
+    @RequestMapping(params = "action=authenicate", method = RequestMethod.POST)
+    public String authenticate()
+    {
+        return "index";
     }
 }
